@@ -10,22 +10,19 @@ function randomizza(){
 }
 
 var funzione_random = randomizza();
-document.writeln(funzione_random);
 
 // l'utente sceglie se è pari o dispari e un numero tra 1 e 5
 
-// var utente1 = prompt("Scegli tra PARI e DISPARI");
-// var numeroUtente = parseInt(prompt("Sceglie un numero tra 1 e 5"))
+var utente1 = prompt("Scegli tra PARI e DISPARI");
+var numeroUtente = parseInt(prompt("Sceglie un numero tra 1 e 5"))
 
-
-//manca l'utente CPU
-
+document.writeln("Il numero scelto dall'utente è " + numeroUtente + " " + "Il numero dell'avversario è " + funzione_random);
 
 // una volta che l'utente ha scelto la cpu sarà di conseguenza pari o dispari
 //creo la condizione in cui se un numero è pari o dispari e decreto il vincitore
 
-if (funzione_random % 2 == 0) {
+if ((funzione_random + numeroUtente) % 2 == 0) {
   document.writeln("Ha vinto PARI");
-} else if(funzione_random % 2 != 0) {
+} else if((funzione_random + numeroUtente) % 2 != 0) {
   document.writeln("Ha vinto DISPARI");
 }
