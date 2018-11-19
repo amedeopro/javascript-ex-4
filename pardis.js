@@ -16,6 +16,13 @@ var funzione_random = randomizza();
 var utente1 = prompt("Scegli tra PARI e DISPARI");
 var numeroUtente = parseInt(prompt("Sceglie un numero tra 1 e 5"))
 
+if (utente1 == "pari") {
+  document.writeln("L'utente ha scelto di essere PARI <br>");
+} else if (utente1 == "dispari"){
+  document.writeln("L'utente ha scelto di essere DISPARI <br>");
+} else{
+  document.writeln("L'utente non ha inserito il dato corretto, giocata non valida <br>");
+}
 document.writeln("Il numero scelto dall'utente è " + numeroUtente + " " + "Il numero dell'avversario è " + funzione_random);
 
 // una volta che l'utente ha scelto la cpu sarà di conseguenza pari o dispari
