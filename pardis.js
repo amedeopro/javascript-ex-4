@@ -9,8 +9,8 @@ function randomizza(){
   return numeroCaso;
 }
 
-randomizza();
-document.writeln(randomizza());
+var funzione_random = randomizza();
+document.writeln(funzione_random);
 
 // l'utente sceglie se è pari o dispari e un numero tra 1 e 5
 
@@ -24,8 +24,8 @@ document.writeln(randomizza());
 // una volta che l'utente ha scelto la cpu sarà di conseguenza pari o dispari
 //creo la condizione in cui se un numero è pari o dispari e decreto il vincitore
 
-if (randomizza() % 2 == 0) {
+if (funzione_random % 2 == 0) {
   document.writeln("Ha vinto PARI");
-} else if(randomizza() % 2 != 0) {
+} else if(funzione_random % 2 != 0) {
   document.writeln("Ha vinto DISPARI");
 }
